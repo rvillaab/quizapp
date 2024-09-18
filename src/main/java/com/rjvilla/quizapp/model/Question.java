@@ -1,4 +1,4 @@
-package com.rjvilla.quizapp;
+package com.rjvilla.quizapp.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -14,12 +14,13 @@ public class Question {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Integer id;
     private String questionTitle;
-    private String Option1;
-    private String Option2;
-    private String Option3;
-    private String Option4;
+    private String option1;
+    private String option2;
+    private String option3;
+    private String option4;
     private String rightAnswer;
     private String difficultylevel;
+    private String category;
 
 
 
